@@ -1,0 +1,159 @@
+{
+    "ShowLogs": true,
+    "QMainWindow": [
+        {
+            "tittle": "UI"
+        }
+    ],
+    "QSettings": [
+        {
+            "ThemeSettings": [
+                {
+                    "CustomTheme": []
+                }
+            ],
+            "AppSettings": {
+                "OrginizationName": "UI",
+                "ApplicationName": "UI Company",
+                "OrginizationDormain": "UI.org"
+            }
+        }
+    ],
+    "QPushButtonGroup": [{
+		"Buttons": [
+			"homeBtn",
+			"settingBtn",
+			"logBtn"
+		],
+		"Style":[{
+			"Active": "border-top: 3px solid #7d7dfa;",
+			"NotActive": "border: none;"
+		}]
+	},
+    {
+		"Buttons": [
+			"item1Btn",
+			"item2Btn",
+			"item3Btn",
+			"item4Btn",
+			"item5Btn"
+		],
+		"Style":[{
+			"Active": "border-top: 3px solid #6c58d1; border-bottom: 3px solid #6c58d1; border-left: 3px solid #6c58d1; background-color: #7d7dfa;",
+			"NotActive": "border: none; background-color: #00225c;"
+		}]
+	},
+	{
+		"Buttons": [
+			"endeffectorManControlBtn",
+			"jointsManControlBtn"
+		],
+		"Style":[{
+			"Active": "border: 3px solid #6c58d1; background-color: #7d7dfa;",
+			"NotActive": "border: none; background-color: #00225c;"
+		}]
+	}
+	],
+    "QStackedWidget":[
+		{
+			"name":"stackedWidget",
+			"transitionAnimation":[
+				{
+					"fade":[
+						{
+							"active": true,
+							"duration":200,
+							"easingCurve": "Linear"
+						}
+					],
+					"slide":[
+						{
+							"active":true,
+							"duration": 200,
+							"direction": "horizontal",
+							"easingCurve": "Linear"
+						}
+					]
+				}
+			],
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"homeBtn": "homePage",
+							"logBtn": "logPage",
+                            "settingBtn": "settingPage"
+						}
+					]
+				}
+			]
+	
+		},
+		{
+			"name":"settingPages",
+			"transitionAnimation":[
+				{
+					"fade":[
+						{
+							"active": true,
+							"duration":300,
+							"easingCurve": "Linear"
+						}
+					],
+					"slide":[
+						{
+							"active":true,
+							"duration": 300,
+							"direction": "vertical",
+							"easingCurve": "Linear"
+						}
+					]
+				}
+			]	
+		},
+		{
+			"name":"robotPositionSetting",
+			"transitionAnimation":[
+				{
+					"fade":[
+						{
+							"active": true,
+							"duration":300,
+							"easingCurve": "Linear"
+						}
+					],
+					"slide":[
+						{
+							"active":true,
+							"duration": 300,
+							"direction": "horizontal",
+							"easingCurve": "Linear"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"changeRobotPositionsPages",
+			"transitionAnimation":[
+				{
+					"fade":[
+						{
+							"active": true,
+							"duration":100,
+							"easingCurve": "Linear"
+						}
+					],
+					"slide":[
+						{
+							"active":true,
+							"duration": 100,
+							"direction": "horizontal",
+							"easingCurve": "Linear"
+						}
+					]
+				}
+			]
+		}
+	]
+}
